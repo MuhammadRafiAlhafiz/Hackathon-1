@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link ke Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Hackthon</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse ml-10"
+        >
+          <img src="../assets/logo.png" alt="" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="beli.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Beli</a
+              >
+            </li>
+            <li>
+              <a
+                href="Tentangkami.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="asuransi.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Asuransi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Content -->
+    <div class="flex flex-col md:flex-row justify-between">
+      <div
+        class="md:border p-5 m-10 mt-32 md:ml-56 w-full md:w-3/12 shadow-2xl"
+      >
+        <p class="font-bold font-jakarta text-3xl">Tentang Kami</p>
+        <p class="mt-10">
+          Homespot adalah platform teknologi berbasis web base dengan sistem
+          one-stop housing marketplace. Homespot menghubungkan antara pembeli,
+          penjual dan penyewa dengan masyarakat yang membutuhkan layanan
+          informasi jual beli dan memudahkan untuk memperoleh hunian sesuai
+          dengan impian.
+        </p>
+        <p class="mt-5 font-bold">Hubungi Kami</p>
+        <div class="flex justify-between mt-5">
+          <div>
+            <button>
+              <a href="index.html"
+                ><img src="../assets/whatsap.png" alt=""
+              /></a>
+            </button>
+          </div>
+          <div>
+            <button>
+              <a href="index.html"><img src="../assets/email.png" alt="" /></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-32 md:mr-20">
+        <img src="../assets/TentangKami.png" alt="" />
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <div
+      class="flex flex-col md:flex-row justify-between border mt-16 rounded-3xl shadow-2xl bg-blue-400"
+    >
+      <div
+        class="md:border p-8 m-10 mt-10 md:ml-20 w-full md:w-3/12 shadow-2xl bg-white rounded-2xl"
+      >
+        <p class="font-bold font-jakarta text-3xl">Cari Properti</p>
+        <p class="mt-10">
+          Segera temukan hunian impianmu melalui Homespot Lorem ipsum, dolor sit
+          amet consectetur adipisicing elit. Ex accusantium perferendis quod
+          possimus ipsa nam voluptas provident dolor suscipit ea.
+        </p>
+        <button
+          class="border p-2 m-2 bg-blue-700 rounded-lg text-white mt-10 md:ml-12"
+        >
+          <a href="index.html">Cari Properti</a>
+        </button>
+      </div>
+
+      <div
+        class="md:border p-5 m-10 mt-10 md:ml-56 w-full md:w-3/12 shadow-2xl bg-white rounded-2xl"
+      >
+        <p class="font-bold font-jakarta text-3xl">Pilih Properti</p>
+        <p class="mt-10">
+          Jadikan Homespot sebagai bagian dari perjalanan anda berikutnya,
+          dengan memilih hunian sesuai dengan impian Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Debitis sed tenetur cum dolores
+          accusantium reprehenderit pariatur temporibus doloribus voluptas
+          quibusdam
+        </p>
+      </div>
+
+      <div
+        class="md:border p-5 m-10 mt-10 md:ml-56 w-full md:w-3/12 shadow-2xl bg-white rounded-2xl"
+      >
+        <p class="font-bold font-jakarta text-3xl">Kalkulasi KPR</p>
+        <p class="mt-10">
+          Hitung estimasi angsuran KPR perbulan anda menggunakan kalkulator ini
+          :<br /><br />
+          *Catatan: Perhitungan ini adalah hasil perkiraaan aplikasi KPR secara
+          umum. Data perhitungan di atas dapat berbeda dengan perhitungan bank.
+          Untuk perhitungan yang akurat, silahkan hubungi kantor cabang kami.
+        </p>
+        <button
+          class="border p-2 m-2 bg-blue-700 rounded-lg text-white mt-16 md:ml-20"
+        >
+          <a href="index.html">Kalkulator</a>
+        </button>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <div class="flex justify-center mt-16">
+      <button class="border p-5 rounded-xl bg-blue-700 text-white">
+        <a class="font-bold" href="index.html">JOIN OUR TEAM -></a>
+      </button>
+    </div>
+
+    <div class="flex justify-center size-9 mt-28">
+      <img src="../assets/ajuan KPR.png" alt="" />
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 dark:bg-gray-900 mt-16">
+      <div class="mx-auto w-full max-w-screen-xl p-1 py-6 lg:py-2">
+        <img src="../assets/logo.png" alt="" />
+        <div class="flex justify-between mt-5">
+          <img src="../assets/footer1.png" alt="" />
+          <img src="../assets/footer2.png" alt="" />
+          <img src="../assets/footer3.png" alt="" />
+          <img src="../assets/footer4.png" alt="" />
+          <img src="../assets/footer5.png" alt="" />
+        </div>
+        <div class="flex justify-end mt-6 gap-5">
+          <a
+            href="#"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 21 16"
+            >
+              <path
+                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785a16.46 16.46 0 0 0 5.064-2.595a17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045a1.93 1.93 0 0 1 1.8-2.047a1.919 1.919 0 0 1 1.8 2.047a1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045a1.93 1.93 0 0 1 1.8-2.047a1.918 1.918 0 0 1 1.8 2.047a1.93 1.93 0 0 1-1.8 2.045Z"
+              ></path>
+            </svg>
+          </a>
+          <!-- Add other social media icons here -->
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+  </body>
+</html>

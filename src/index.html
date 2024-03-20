@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/apple-touch-icon.png">   
+ <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Hackthon</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="#/"
+          class="flex items-center space-x-3 rtl:space-x-reverse ml-10"
+        >
+          <img src="../assets/logo.png" alt="" />
+        </a>
+        <div
+          class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-7"
+        >
+          <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-5">
+          <a href="login.html">LOGIN</a>  
+          </button>
+
+          <button>
+         <a href="sign.html">SIGN UP</a>
+          </button>
+        </div>
+
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="beli.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Beli</a
+              >
+            </li>
+            <li>
+              <a
+                href="Tentangkami.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="asuransi.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Asuransi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- HOMEPAGE -->
+    <section class="px-5 py-24">
+      <div class="flex justify-center">
+        <div class="w-5/12">
+          <p class="text-[48px] text-4xl font-jakarta mr-10">
+            Buat Masa Depan Rumah Anda Bersama
+            <span class="text-blue-700">Home</span
+            ><span class="text-red-700">Spot</span>
+          </p>
+
+          <p
+            class="mt-10 w-[665px] h-[68px] font-jakarta size-[16px] font-medium"
+          >
+            Mitra terpercaya Anda dalam mewujudkan rumah impian. Solusi
+            finansial canggih dan layanan ramah pengguna untuk pengalaman lancar
+            dan memuaskan.
+          </p>
+        </div>
+        <div class="ml-5">
+          <img src="../assets/Home.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Dropdown menu -->
+    <div class="container mx-auto py-8">
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4"
+      >
+        <!-- Dropdown 1 -->
+        <div class="relative right-72 bottom-56">
+          <select
+          class="block appearance-none sm:w-24 bg-white border border-gray-300 px-4 py-2  rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+          >
+            <option>KOTA</option>
+            <option>Bogor</option>
+            <option>Jakarta</option>
+            <option>Bandung</option>
+
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+          >
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M15.293 4.293a1 1 0 0 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 1.414-1.414L10 10.586l5.293-5.293a1 1 0 0 1 1.414 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Tab Search -->
+        <div class="relative right-72 bottom-56">
+          <input
+            type="text"
+            class="block w-full md:w-64 bg-white border border-gray-300 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Search..."
+          />
+        </div>
+
+        <!-- Dropdown 2 -->
+        <div class="relative md:block hidden right-72 bottom-56">
+          <select
+            class="block appearance-none w-full md:w-15 sm:w-24 bg-white border border-gray-300 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+          >
+            <option>TIPE</option>
+            <option>Sweet</option>
+            <option>Family</option>
+            <option>Luxury</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+          >
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M15.293 4.293a1 1 0 0 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 1.414-1.414L10 10.586l5.293-5.293a1 1 0 0 1 1.414 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Tombol -->
+        <div class="relative md:block hidden right-72 bottom-56">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            Cari
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END Dropdown menu -->
+
+    <!-- Content -->
+    <section class="mb-36">
+      <div class="flex">
+        <div class="w-4/12 ml-52">
+          <h1 class="text-center font-semibold text-3xl font-jakarta">
+            Mengapa Bersama kami
+          </h1>
+          <p class="text-justify mt-10 font-medium font-jakarta">
+            Dapatkan pengalaman mencari properti yang tak tertandingi dengan
+            HomeSpot! Temukan rumah impian Anda dengan mudah, cepat, dan aman.
+            Dengan teknologi canggih kami, temukan beragam pilihan properti yang
+            sesuai dengan kebutuhan dan keinginan Anda. Mulai petualangan
+            pencarian properti Anda sekarang dengan HomeSpot, di mana setiap
+            rumah memiliki cerita uniknya sendiri.!
+          </p>
+          <p class="text-justify mt-5 font-medium font-jakarta">
+            Dengan HomeSpot, Anda tidak hanya mendapatkan akses ke properti yang
+            luas dan beragam, tetapi juga mendapatkan semua alat dan layanan
+            yang Anda butuhkan untuk membuat proses pencarian dan pembelian
+            properti menjadi lebih mudah dan menguntungkan.
+          </p>
+          <p class="text-justify mt-5 font-medium font-jakarta" >
+            HomeSpot tidak hanya merupakan sebuah properti marketplace biasa.
+            Kami menawarkan lebih dari sekadar daftar properti. Berikut adalah
+            beberapa keunggulan yang kami tawarkan:
+          </p>
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-5 mt-5"
+          >
+            Read More
+          </button>
+        </div>
+
+        <!-- CARD CONTENT -->
+        <div>
+          <div class="flex">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10 "
+            >
+              <div class="p-5">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                   <img src="../assets/LogoC1.png" alt=""> Penawaran Terbaik
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">
+                  HomeSpot bekerja sama dengan berbagai developer dan agen
+                  properti terkemuka untuk menyajikan penawaran terbaik kepada
+                  Anda
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-600 bg-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-5 "
+            >
+              
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                 <img src="../assets/LogoC2.png" alt=""> Kemudahan Pencarian                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">
+                  Dengan kecanggihan teknologi HomeSpot menyediakan pengalaman pencarian properti yang tidak tertandingi. 
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-600 bg-white rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <div class="flex">
+          <div>
+              <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10  mt-10"
+              >
+                <div class="p-5">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta"
+                    ><img src="../assets/LogoC3.png" alt="">
+                    Perhitungan KPR                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">
+                    Dengan HomeSpot, Anda dapat dengan cepat dan mudah menghitung estimasi KPR untuk properti impian Anda.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-600 bg-white rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Read more
+                  
+                  </a>
+                </div>
+              </div>
+          </div>
+
+          <div class="flex">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-5 mt-10"
+            >
+              <div class="p-5">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta"
+                  >
+                  <img src="../assets/LogoC4.png" alt="">Asuransi                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">
+                  Keamanan properti Anda adalah prioritas kami. Melalui HomeSpot, kami menyediakan layanan asuransi properti
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-600 bg-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          <div>
+        </div>
+          </div>
+        </div>
+    </section>
+    <!-- END CONTENT -->
+
+    <!-- Content jakarta -->
+    <div class="flex justify-between mb-16">
+
+      <div class="relative w-5/12 bg-lue border rounded-lg shadow ml-16 top-[-20px] max-h-[400px]">
+          <div class="p-5">
+              <div class="flex items-center mb-3">
+                  <img src="../assets/location.png" alt="">
+                  <p class="ml-2">Jakarta</p>
+              </div>
+              <p class="mt-10 text-center mr-5 font-bold text-xl text-gray-700 dark:text-gray-400 ">Temukan Properti di sekitar anda</p>
+              <p class="mt-10 font-normal text-lg text-gray-700 dark:text-gray-400">Temukan Properti terbaru yang strategis dari rumah, apartment, ruko dan villa kesukaan anda bersama Homespot Tentukan pilihan ideal Anda dengan berbagai macam tipe properti yang tersedia, mulai dari rumah tradisional yang nyaman, apartemen modern dengan fasilitas lengkap, hingga ruko dan villa yang memikat hati, semuanya tersedia untuk Anda jelajahi bersama Homespot. Temukan tempat yang sempurna untuk tinggal atau investasi Anda berikutnya sekarang juga!</p>
+          </div>
+      </div>
+  
+      <div class="flex flex-col justify-between w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10">
+          <a href="#">
+              <img class="p-8 rounded-t-lg" src="../assets/Konten1.png" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+              <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white font-jakarta">Amggel Residance</h5>
+              </a>
+              <div class="flex items-center mt-2.5 mb-5">
+                  <!-- Rating stars here -->
+              </div>
+              <p class="mb-3 font-jakarta">Jakarta Barat 3KT 2KM LB 81M2</p>
+              <div class="flex items-center justify-between">
+                  <span class="text-3xl font-bold text-gray-900 dark:text-white font-jakarta">Rp.2.200.000.000</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="flex flex-col justify-between w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10">
+          <a href="#">
+              <img class="p-8 rounded-t-lg" src="../assets/konten2.png" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+              <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white font-jakarta">Soedirman Residance</h5>
+              </a>
+              <div class="flex items-center mt-2.5 mb-5">
+                  <!-- Rating stars here -->
+              </div>
+              <p class="mb-3 font-jakarta">Jakarta Barat 2KT 1KM LB 50M2</p>
+              <div class="flex items-center justify-between">
+                  <span class="text-3xl font-bold text-gray-900 dark:text-white font-jakarta">Rp.1.200.000.000</span>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  <!-- END Content jakarta -->
+
+  <!-- Card line 1 -->
+<div>
+    <ul>
+      <li class="flex justify-center gap-16 font-bold text-xl font-jakarta">
+        <a href="#">House</a>
+        <a href="#">Villa</a>
+        <a href="#">Apartement</a>
+        <a href="#">Ruko</a>
+      </li>
+    </ul> 
+</div>
+
+<section class="px-5 py-16">
+  <div>
+      <div class="flex justify-between gap-5">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila1.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+      </a>          
+      <h5 class="mb-2  text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Villa Sundani</h5>
+
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Bandung
+        1KT  1 KM   LB 80M2,    Pool,   Water heater</p>
+     <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.2.500.000.000</p>
+  </div>
+</div>
+
+  
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila2.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Bohemian Bamboo</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Bandung
+        2KT   2KM   LB 30M2 Pool, Water heater.</p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.500.000.000</p>
+  </div>
+</div>
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila3.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Vivania living</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Bali
+        3 KT  3KM    LB 95M   Pool Pool, Water heater. </p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.1.700.000.000</p>
+
+  </div>
+</div>
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+    <img class="rounded-t-lg ml-5 py-5" src="../assets/fila4.png" alt="">
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Melatina Villas</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Bali
+        3 KT   3 KM   LB  50M2   Pool Pool, Water heater.</p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.800.000.000</p>
+
+      
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+</section>
+  <!-- END Card line 1 -->
+
+
+<!-- CARD LINE 2 -->
+<section class="">
+  <div>
+      <div class="flex justify-between gap-5">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila5.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Shantika Holiday</h5>
+      </a>
+      <p class="mb-3 font-jakarta font-normal text-gray-700 dark:text-gray-400">Jakarta
+        3 KT   3 KM   LB  50M2   Pool Pool, Water heater.</p>
+        <p class="mt-5 font-semibold font-jakarta text-2xl">Rp.1.900.000.000</p>
+  </div>
+</div>
+
+  
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila6.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">City Village</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Jakarta
+        3 KT   3 KM   LB  120M2   Pool Pool, Water heater.</p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.1.530.000.000
+  </div>
+</div>
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila7.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Kintamani Vibes</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Bali
+        5 KT    5 KM    LB 100M2   Pool. Pool, Water heater.</p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.1.530.000.000
+  </div>
+</div>
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <a href="#">
+      <img class="rounded-t-lg ml-5 py-5" src="../assets/fila8.png" alt="" />
+  </a>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-jakarta">Cemagi Village</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 font-jakarta">Badung
+        1 KT   1KM  LB 50M2   Pool Pool, Water heater.</p>
+        <p class="mt-5 font-semibold text-2xl font-jakarta">Rp.750.000.000
+
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+<!-- END Card line 2 -->
+
+<!-- Client Review -->
+<div class="flex justify-center font-bold text-2xl py-14 font-jakarta">
+  <a href="">Clien Review</a>
+</div>
+
+<div class="flex justify-between  ">
+  <img src="../assets/client1.png" alt="">
+  <img src="../assets/client2.png" alt="">
+  <img src="../assets/client3.png" alt="">
+  <img src="../assets/client4.png" alt="">
+</div>
+<!-- End Client Review -->
+
+<div>
+  <div class="bg-blue-200 border border-gray-300 p-4 rounded-2xl">
+      <p class="flex justify-center font-bold text-2xl mt-6 font-jakarta">Berikan Ulasan Anda</p>
+      <p class="flex justify-center font-medium mt-8 font-jakarta">Tolong berikan ulasan anda pada website kami  sehingga kami dapat memperbaiki sistem kedepannya</p>
+
+      <div class="flex justify-center">
+        <button class="bg-white border p-5 mt-16 rounded-xl">
+          <a href="Tentangkami.html">SEND YOUR MASSAGE HERE</a></button>
+      </div>
+  </div>
+</div>
+
+<!-- CALCULATOR -->
+<div class="border border-gray-300 p-4 flex justify-center mt-10 rounded-3xl shadow-xl bg-red-100 m-28">
+    <div>
+        <img class="mr-96 ml-28 mt-14" src="../assets/home kalkulator.png" alt="">
+    </div>
+
+    <div class="mr-40">
+      <h2 class="text-lg font-semibold mb-4 ml-8">Kalkulator Harga Properti</h2>
+      <div class="flex mb-4">
+          <div class="mr-48">
+              <label for="harga-properti" class="mb-1">Harga Properti</label>
+              <input type="text" id="harga-properti" class="w-full border border-black  rounded-md p-2">
+          </div class flex mb-4>
+          <div class="w-1/2 mr-16">
+              <label for="uang-muka" class="block mb-1">Jumlah pinjaman</label>
+              <input type="text" id="uang-muka" class="w-full border border-black rounded-md p-2 ">
+          </div>
+      </div>
+      <div class="flex mb-4">
+          <div class="w-1/2 mr-2">
+              <label for="jumlah-pinjaman" class="block mb-1">Uang Muka</label>
+              <input type="text" id="jumlah-pinjaman" class="w-full border border-black rounded-md p-2">
+          </div>
+          <div class="ml-24">
+              <label for="masa-kredit" class="block mb-1">Masa Kredit Fix </label>
+              <input type="text" id="masa-kredit" class="w-full border border-black rounded-md p-2">
+          </div>
+      </div>
+      <div class="flex mb-4">
+          <div class="w-1/2 mr-2">
+              <label for="suku-bunga" class="block mb-1">Suku Bunga</label>
+              <select id="suku-bunga" class="w-full border border-black rounded-md p-2">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+              </select>
+          </div>
+          <div class="ml-24">
+              <label for="nominal-suku-bunga" class="block mb-1">Nominal Suku Bunga (%)</label>
+              <input type="text" id="nominal-suku-bunga" class="w-full border border-black rounded-md p-2">
+          </div>
+      </div>
+      <div>
+          <div class="w-1/2 mr-2">
+              <label for="lama-pinjaman" class="block mb-1">Lama Pinjaman (tahun)</label>
+              <input type="text" id="lama-pinjaman" class="w-full border border-black rounded-md p-2">
+          </div>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 self-start mt-10">Hitung</button>
+  </div>
+    </div>
+</div>
+<!-- END CALCULATOR -->
+
+<!-- FOOTER -->
+<footer class="bg-blue-600 dark:bg-gray-900">
+  <div class="mx-auto w-full max-w-screen-xl p-1 py-6 lg:py-2">
+    <img src="../assets/logo.png" alt="">
+          <div class="flex justify-between mt-5">
+            <img src="../assets/footer1.png" alt="">
+            <img src="../assets/footer2.png" alt="">
+            <img src="../assets/footer3.png" alt="">
+            <img src="../assets/footer4.png" alt="">
+            <img src="../assets/footer5.png" alt="">
+          </div>
+        <div class="flex justify-end mt-6 gap-5">
+                <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                      <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                  </svg>
+                <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+                <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
